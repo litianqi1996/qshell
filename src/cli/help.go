@@ -6,7 +6,7 @@ import (
 	"runtime"
 )
 
-var version = "v2.1.9"
+var version = "v2.2.1"
 
 var optionDocs = map[string]string{
 	"-f": "use specified host file",
@@ -76,10 +76,12 @@ var cmdDocs = map[string][]string{
 	"zone":          []string{"qshell zone [<Zone>]", "Switch the zone, [nb, bc, hn, na0]"},
 	"dircache":      []string{"qshell dircache <DirCacheRootPath> <DirCacheResultFile>", "Cache the directory structure of a file path"},
 	"listbucket":    []string{"qshell listbucket [-marker <ListMarker>] <Bucket> [<Prefix>] <ListBucketResultFile>", "List all the files in the bucket by prefix"},
+	"listbucket2":   []string{"qshell listbucket2 [-marker <ListMarker>] <Bucket> [<Prefix>] <ListBucketResultFile>", "List all the files in the bucket by prefix"},
 	"alilistbucket": []string{"qshell alilistbucket <DataCenter> <Bucket> <AccessKeyId> <AccesskeySecret> [Prefix] <ListBucketResultFile>", "List all the file in the bucket of aliyun oss by prefix"},
 	"prefop":        []string{"qshell prefop <PersistentId>", "Query the pfop status"},
 	"fput":          []string{"qshell fput <Bucket> <Key> <LocalFile> [<Overwrite>] [<MimeType>] [<UpHost>] [<FileType>]", "Form upload a local file"},
 	"rput":          []string{"qshell rput <Bucket> <Key> <LocalFile> [<Overwrite>] [<MimeType>] [<UpHost>] [<FileType>]", "Resumable upload a local file"},
+	"get":           []string{"qshell get <Bucket> <Key> <LocalFile>", "Get file from the bucket"},
 	"qupload":       []string{"qshell qupload [<ThreadCount>] <LocalUploadConfig>", "Batch upload files to the qiniu bucket"},
 	"qupload2":      []string{"qshell qupload2 [options]", "Batch upload files to the qiniu bucket"},
 	"qdownload":     []string{"qshell qdownload [<ThreadCount>] <LocalDownloadConfig>", "Batch download files from the qiniu bucket"},

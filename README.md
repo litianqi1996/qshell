@@ -15,7 +15,7 @@ qshell是利用[七牛文档上公开的API](http://developer.qiniu.com)实现�
 
 |版本     |支持平台|链接|
 |--------|---------|----|
-|qshell v2.1.9|Mac OSX, Linux, Windows|[下载](http://devtools.qiniu.com/qshell-v2.1.9.zip)|
+|qshell v2.2.0|Mac OSX, Linux, Windows|[下载](http://devtools.qiniu.com/qshell-v2.2.0.zip)|
 
 ## 安装
 
@@ -121,7 +121,7 @@ $ qshell -m stat bucket key
 |------|------------|----------|--------|
 |account|账号|设置或显示当前用户的`AccessKey`和`SecretKey`|[文档](docs/account.md)|
 |dircache|存储|输出本地指定路径下所有的文件列表|[文档](docs/dircache.md)|
-|listbucket|存储|列举七牛空间里面的所有文件|[文档](docs/listbucket.md)|
+|listbucket/listbucket2|存储|列举七牛空间里面的所有文件|[文档](docs/listbucket.md)|
 |prefop|存储|查询七牛数据处理的结果|[文档](docs/prefop.md)|
 |fput|存储|以文件表单的方式上传一个文件|[文档](docs/fput.md)|
 |rput|存储|以分片上传的方式上传一个文件|[文档](docs/rput.md)|
